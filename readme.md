@@ -8,7 +8,8 @@ nmap -sn 10.0.5.10-30 192.168.12.100-200 10.5.0.5 192.168.*.1-255
 nmap -p1-65535 10.0.5.128
 nmap -p- 10.0.5.128 -> scaneo total, es basico y es lo principal. 
 Si no se colocan los puertos, automaticamente scanea los 1000 puertos
-nmap -P0 -p- 10.0.5.128 -> No scanea host, solo scaneo de todos los puertos Puertos. 
+nmap -P0 -p- 10.0.5.128 -> No scanea host, solo scaneo de todos los puertos Puertos.
+P0 = No haga descubrimento de redes 
 Siguiente paso.
 3. Paso escaneo de Versiones 
 nmap -P0 -p- -sV 10.0.5.128 ->
