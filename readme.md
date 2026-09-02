@@ -17,4 +17,6 @@ nmap -P0 -p- -sV -O 10.0.5.128 ->
 -O = Sistema Operativo 
 nmap -P0 -p- -sV -O -sC 10.0.5.128
 nmap -P0 -p- -A 10.0.5.128 ->
--A = scaneo todas las 3 alternativas que hemos realizado en el paso 3 
+-A = scaneo todas las 3 alternativas que hemos realizado en el paso 3
+nmap -P0  -sS -p- -A 10.0.5.128 -> Comando base para scanear tus objetivos 
+-sS -> Utilizas el comando con altos previlegios.
