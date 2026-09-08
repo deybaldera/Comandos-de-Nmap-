@@ -12,15 +12,16 @@ Escanear redes con comodines, asterisco
 nmap -sn 10.0.5.10-30 192.168.12.100-200 10.5.0.5 192.168.*.1-255
 ```
 Explicación: 
-El comando procesa en paralelo 65,431 direcciones IP distribuidas en los siguientes rangos:
+- El comando procesa en paralelo 65,431 direcciones IP distribuidas en los siguientes rangos:
 
-10.0.5.10-30: Escanea 21 direcciones IP (desde 10.0.5.10 hasta 10.0.5.30).
+- 10.0.5.10-30: Escanea 21 direcciones IP (desde 10.0.5.10 hasta 10.0.5.30).
 
-192.168.12.100-200: Escanea 101 direcciones IP (desde 192.168.12.100 hasta 192.168.12.200).
+- 192.168.12.100-200: Escanea 101 direcciones IP (desde 192.168.12.100 hasta 192.168.12.200).
 
-10.5.0.5: Escanea únicamente esta dirección IP específica.
+- 10.5.0.5: Escanea únicamente esta dirección IP específica.
 
-192.168.*.1-255: El comodín * equivale a la red completa de clase B 192.168.0.0/16. Escanea todas las subredes posibles (192.168.0.x, 192.168.1.x ... hasta 192.168.255.x), evaluando los rangos .1 al .255 en cada una (un total de 256 subredes × 255 IPs = 65,280 direcciones).
+- 192.168.*.1-255: El comodín * equivale a la red completa de clase B 192.168.0.0/16.
+- Escanea todas las subredes posibles (192.168.0.x, 192.168.1.x ... hasta 192.168.255.x), evaluando los rangos .1 al .255 en cada una (un total de 256 subredes × 255 IPs = 65,280 direcciones).
 
 Resultado final: Nmap te entregará una lista limpia mostrando únicamente las direcciones IP de los equipos activos y sus direcciones MAC (si están en la red local), omitiendo los puertos o servicios en ejecución.
 * = escanea todos los valores
@@ -88,5 +89,5 @@ xsltproc nombre.xml -o reporte.html
 ```
 nota. Recuerda saber en donde estas navegando en el terminal 
 opcional:
-mv -> mueves archivos de un directorio a otro
-zip -r nombre.zip /directorio name -> Comprimes 
+- mv -> mueves archivos de un directorio a otro
+- zip -r nombre.zip /directorio name -> Comprimes 
