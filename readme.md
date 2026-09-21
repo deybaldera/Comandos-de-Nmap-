@@ -91,22 +91,20 @@ nota. Recuerda saber en donde estas navegando en el terminal
 opcional:
 - mv -> mueves archivos de un directorio a otro
 - zip -r nombre.zip /directorio name -> Comprimes
---------------------------------------------------------
--P0 : No hace ping 
--p : Escanea un puerto especifico o un rango 
--sV : Escanea versiones de servicios 
--O : Escaneo el sistema operativo del Hardware
--T1 .. T4 : Velocidad que se ejecuta el comando 
+### Mas comandos
+- -P0 : No hace ping 
+- -p : Escanea un puerto especifico o un rango 
+- -sV : Escanea versiones de servicios 
+- -O : Escaneo el sistema operativo del Hardware
+- -T1 .. T4 : Velocidad que se ejecuta el comando 
 ### Formatos de Guardado 
--
--oG : Formato gropeable 
--oX : Formato xml 
--oN : Formato Noramal 
--oA : Se guarda en los 3 formatos principales. 
---top-ports : Escanea cierta cantidad de puertos mas conocidos. Si no especificamos scanea los 1000
--F : Escanea los 100 puertos mas conocidos 
--n : No realiza traduccion de DNS 
----------------------------------------------------
+- -oG : Formato gropeable 
+- -oX : Formato xml 
+- -oN : Formato Noramal 
+- -oA : Se guarda en los 3 formatos principales. 
+- --top-ports : Escanea cierta cantidad de puertos mas conocidos. Si no especificamos scanea los 1000
+- -F : Escanea los 100 puertos mas conocidos 
+- -n : No realiza traduccion de DNS 
 ```
 sudo nmap -sS 1.2.3.4 4.5.6-8.7
 ```
