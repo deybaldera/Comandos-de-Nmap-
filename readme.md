@@ -98,6 +98,7 @@ opcional:
 -O : Escaneo el sistema operativo del Hardware
 -T1 .. T4 : Velocidad que se ejecuta el comando 
 ### Formatos de Guardado 
+-
 -oG : Formato gropeable 
 -oX : Formato xml 
 -oN : Formato Noramal 
